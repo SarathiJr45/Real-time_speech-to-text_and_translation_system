@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Video Transcription & Translation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    video {
+      width: 60%;
+      margin: 20px 0;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #captions {
+      margin-top: 20px;
+    }
+    #captions div {
+      font-size: 18px;
+      margin: 5px;
+    }
+    #original {
+      color: #333;
+    }
+    #translation {
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <h1>Real-Time Video Transcription & Translation</h1>
+  <video id="video" autoplay></video>
+  <div>
+    <button id="startBtn">Start Recording</button>
+    <button id="stopBtn" disabled>Stop Recording</button>
+  </div>
+  <div id="captions">
+    <div id="original">Original: </div>
+    <div id="translation">Translation: </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
